@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tema padrão -->
+    <link id="themeStylesheet" rel="stylesheet" href="Assets/CSS/style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="shortcut icon" href="Assets/Images/Show-logo.png" type="image/x-icon">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet" />
+    <title>Capy Rio</title>
+  </head>
+  <body>
+    <header>
+        <div id="logo">
+          <img src="Assets/Images/Show-logo.png" alt="Logo da Capy Rio" id="img_logo" />
+        </div>
+        <button class="btn-secondary" onclick="toggleTheme()" id="themeToggleBtn">
+            <i class="bi bi-moon-fill"></i>
+        </button>          
+      </header>
+      
+    <div class="conteudo">
+      <div class="text">
+        <h1>
+          Hado II anuncia <span>show imperdível</span> no Rio de Janeiro em 29
+          de outubro
+        </h1>
+        <p>
+          A cantora e compositora <span>Hado II</span> está de volta aos palcos
+          com uma apresentação única no <span>Rio de Janeiro</span>, marcada
+          para o dia <span>29 de outubro</span>. O show promete uma experiência
+          sonora intensa e envolvente, unindo batidas modernas, letras profundas
+          e a energia única que já conquistou uma legião de fãs.
+        </p>
+
+        <p>
+          O evento acontecerá em um dos espaços mais vibrantes da cena musical
+          carioca (local a confirmar), reunindo público de todas as idades para
+          celebrar a arte de Hado II, que vem se destacando como um dos nomes
+          mais promissores da nova geração da música brasileira.
+        </p>
+
+        <p>
+          Com um repertório que mescla seus maiores sucessos e novidades do
+          próximo projeto, o show é mais do que uma simples apresentação — é uma
+          verdadeira imersão no universo criativo da artista. Quem for pode
+          esperar performances marcantes, visual impactante e, claro, muita
+          emoção.
+        </p>
+
+        <p>
+          Prepare-se para uma noite inesquecível. Os ingressos já estão à venda
+          e, pela procura, devem esgotar rápido. Não perca!
+        </p>
+        <button onclick="document.getElementById('audioPreview').play()">
+          Ouvir Prévia <i class="bi bi-music-note-list"></i>
+        </button>
+        <img
+          class="img_show"
+          src="Assets/Images/show.webp"
+          alt="Imagem de show" />
+
+        <audio id="audioPreview">
+          <source src="Assets/Images/show-áudio.mp3" type="audio/mpeg" />
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
+      </div>
+    </div>
+
+    <footer>
+      <div id="footer_div">
+        <div class="div_footer">
+          <h3 class="top_footer">Creditos</h3>
+          <p class="desc_footer">Dev: Pedro S. P.</p>
+          <p class="desc_footer">Org.: CapyCulture</p>
+          <p class="desc_footer"></p>
+        </div>
+        <div class="div_footer">
+          <h3 class="top_footer">Pre-venda</h3>
+          <p class="desc_footer">Indisponivel</p>
+          <p class="desc_footer"></p>
+          <p class="desc_footer"></p>
+        </div>
+        <div class="div_footer">
+          <h3 class="top_footer">
+            Ajuda <i class="bi bi-question-square-fill"></i>
+          </h3>
+          <p class="desc_footer"><a href="">Perguntas frequentes</a></p>
+          <p class="desc_footer"><a href="">Suporte</a></p>
+          <p class="desc_footer"><a href="">Nos Relate</a></p>
+        </div>
+        <div class="div_footer">
+          <h3 class="top_footer">
+            Contatos <i class="bi bi-telephone-fill"></i>
+          </h3>
+          <p class="desc_footer">Instagran <i class="bi bi-instagram"></i></p>
+          <p class="desc_footer">Twitter <i class="bi bi-twitter-x"></i></p>
+          <p class="desc_footer">Youtube <i class="bi bi-youtube"></i></p>
+        </div>
+      </div>
+    </footer>
+    <script src="Assets/JS/script.js"></script>
+  </body>
+</html>
